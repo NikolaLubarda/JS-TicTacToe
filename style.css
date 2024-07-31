@@ -1,0 +1,109 @@
+.tic-tac-toe {
+    display: grid;
+    /*grid-template-columns: repeat(100px);*/
+    gap: 0px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #333;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+
+/* Optional: Style for winning cells */
+.cell.win {
+    background-color: #4caf50;
+    transition: background-color 0.3s;
+}
+
+/* Optional: Style for a draw */
+.draw-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 48px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a 3D shadow effect */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 50px; /* Add some top margin for vertical centering */
+}
+
+.status {
+    text-align: center;
+    margin: 20px auto; /* Center horizontally with top and bottom margin */
+    padding: 20px;
+    background-color: #cccccc; /* Use the same color as your cell background */
+    border: 2px solid #333; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    width: 65%; /* Set the width to 60% of the page */
+    max-width: 400px; /* Optionally, set a maximum width for responsiveness */
+}
+
+h2 {
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* Text color */
+    font-weight: bold;
+}
+
+.rbtn-container {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Adjust top margin for spacing */
+}
+
+
+
+
+
+.reset-button {
+    background-color: rgb(117, 87, 87); /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style on hover */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.reset-button:hover {
+    background-color: #9f3823; /* Darker background color on hover */
+}
+.cell.x {
+    font-size: 59px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #3498db; /* Blue for X player */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+}
+
+.cell.o {
+    font-size: 59px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #e74c3c; /* Red for O player */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+}
+
